@@ -400,7 +400,7 @@ class FitBit extends utils.Adapter {
 					type: "state",
 					common: {
 						name: "Battery",
-						role: "value.battery",
+						role: "indicator",
 						type: "string",
 						write: false,
 						read: true,
@@ -414,8 +414,9 @@ class FitBit extends utils.Adapter {
 					type: "state",
 					common: {
 						name: "Battery Level",
-						role: "level",
+						role: "value.battery",
 						type: "number",
+						unit: "%",
 						write: false,
 						read: true,
 					},
